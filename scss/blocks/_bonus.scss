@@ -1,0 +1,52 @@
+.bonus {
+  padding: 50px 0;
+
+  @media (max-width: 993px) {
+    padding: 20px 0 40px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: 668px) {
+      justify-content: center;
+    }
+  }
+
+  &__text-content {
+    max-width: 350px;
+
+    @media (max-width: 668px) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-size: 70px;
+    margin: 0;
+    @include heading;
+  }
+
+  &__text {
+    margin: 20px 0 0;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  &__btn {
+    margin-top: 30px;
+    padding: 15px 35px;
+    font-size: 20px;
+  }
+
+  &__img {
+    padding-top: 50px;
+
+    @media (max-width: 668px) {
+      display: none;
+    }
+
+  }
+}

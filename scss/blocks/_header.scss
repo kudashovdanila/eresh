@@ -1,0 +1,13 @@
+.header {
+  position: relative;
+  padding: 182px 0 150px;
+  background: url(../img/header/bg.png);
+
+  @media (max-width: 993px) {
+    padding: 122px 0 40px;
+  }
+
+  @media (max-width: 447px) {
+    padding-top: 80px;
+  }
+}

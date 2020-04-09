@@ -1,0 +1,95 @@
+.hero {
+
+  &__content {
+    max-width: 700px;
+  }
+
+  &__title {
+    @include heading;
+    font-size: 55px;
+    margin: 0;
+    line-height: 1;
+
+    @media (max-width: 993px) {
+      font-size: 45px;
+      max-width: 450px;
+    }
+
+    @media (max-width: 438px) {
+      font-size: 50px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    max-width: 450px;
+    margin: 30px 0 0;
+    line-height: 1.4;
+
+    @media (max-width: 993px) {
+      font-size: 18px;
+    }
+  }
+
+  &__btn {
+    margin: 40px 0 0;
+    padding: 20px 40px;
+    font-size: 20px;
+  }
+
+  &__message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include bold;
+    height: 80px;
+    width: 100%;
+    z-index: 9;
+    font-size: 15px;
+    max-width: 310px;
+    padding-left: 30px;
+    background-color: #fff;
+    position: absolute;
+    right: 240px;
+    top: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 1182px) {
+      display: none;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 30px;
+      width: 30px;
+      background-color: #fff;
+      border-radius: 0 0 0 100%;
+      transform: rotate(-30deg);
+    }
+  }
+
+  &__robot {
+    position: absolute;
+    height: 525px;
+    right: 0;
+    bottom: -150px;
+
+    @media (max-width: 993px) {
+      height: 350px;
+      bottom: -40px;
+    }
+
+    @media (max-width: 698px) {
+      height: 300px;
+    }
+
+    @media (max-width: 648px) {
+      display: none;
+    }
+  }
+}

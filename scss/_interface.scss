@@ -1,0 +1,35 @@
+body {
+  background-color: #f2f2f2;
+  @include reg;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3a36fe;
+  border-radius: 5px;
+  color: #fff;
+  @include bold;
+  border-bottom: 3px solid darken(#3a36fe, 30%);
+  transition: background-color .2s;
+
+  &:hover {
+    background-color: lighten(#3a36fe, 4%);
+  }
+}
+
+.pos-r {
+  position: relative;
+}
