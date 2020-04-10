@@ -27,6 +27,10 @@
     font-size: 70px;
     margin: 0;
     @include heading;
+
+    @media (max-width: 410px) {
+      font-size: 40px;
+    }
   }
 
   &__text {

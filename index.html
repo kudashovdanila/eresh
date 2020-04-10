@@ -13,45 +13,6 @@
 </head>
 
 <body>
-  <div class="modal reg-modal">
-    <div class="modal-wrap">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Получить доступ</h5>
-          <button type="button" class="close reg-close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <form class="modal-body" action="">
-          <input name="Электронная почта" class="modal-body__email modal-body__input" placeholder="E-mail" type="email"
-            required>
-          <input name="Пароль" class="modal-body__password modal-body__input" placeholder="Пароль" type="password"
-            required>
-          <label class="modal-body__policy modal-body__label">
-            <div class="modal-body__label-text">Даю согласие на
-              обработку
-              данных в соответствии с <a class="modal-body__link" href="https://zemedia.ru/confidential_policy.pdf"
-                target="_blank">политикой
-                конфиденциальности</a></div>
-            <input class="modal-body__checkbox modal-body__checkbox-1" type="checkbox" required>
-            <div class="modal-body__check"></div>
-          </label>
-          <label class="modal-body__contract modal-body__label">
-            <div class="modal-body__label-text">Принимаю условия
-              <a class="modal-body__link" href="https://zemedia.ru/puboferta_eresh.pdf">договора
-                оферты</a></div>
-            <input class="modal-body__checkbox modal-body__checkbox-2" type="checkbox" required>
-            <div class="modal-body__check"></div>
-          </label>
-
-          <span class="text-error emial-error">Такой e-mail уже
-            существует в системе</span>
-          <button type="submit" class="modal-body__btn btn">Зарегистрироваться</button>
-          <a class="modal-body__link log-link reged-yet" href="#">Уже зарегистрированы?</a>
-        </form>
-      </div>
-    </div>
-  </div>
 
   <div class="modal log-modal">
     <div class="modal-wrap">
@@ -112,21 +73,47 @@
         <div class="navbar__content">
           <a href="index.html" class="logo-link"><img src="img/logo.png" alt="Логотип" class="logo"></a>
           <div class="navbar__menu">
-            <a href="https://vk.com/ereshtarget" class="navbar__btn vk-btn" target="_blank"><img src="img/navbar/vk.svg"
-                alt="ВКонтакте"></a>
-            <a href="#" class="btn navbar__btn reg-link">Регистрация</a>
-            <a href="#" class="btn navbar__btn log-link">Вход</a>
+            <a href="#" class="btn navbar__btn log-link">Войти</a>
           </div>
         </div>
       </div>
     </div>
     <div class="hero">
       <div class="container pos-r">
-        <div class="hero__content">
-          <h1 class="hero__title">Надоело выполнять рутинную работу?</h1>
-          <p class="hero__text"> Цифровой ассистент Эриш поможет тебе в создании, настройке и управлении рекламными
-            кампаниями ВКонтакте!</p>
-          <a href="#" class="hero__btn btn reg-link">Вперёд!</a>
+        <div class="hero__wrapper">
+          <div class="hero__content">
+            <h1 class="hero__title">Надоело выполнять рутинную работу?</h1>
+            <p class="hero__text"> Цифровой ассистент Эриш поможет тебе в создании, настройке и управлении рекламными
+              кампаниями ВКонтакте!</p>
+          </div>
+          <form class="modal-body hero__form" action="">
+            <h5 class="modal-title">Получить доступ</h5>
+            <input name="Электронная почта" class="modal-body__email modal-body__input" placeholder="E-mail"
+              type="email" required>
+            <input name="Пароль" class="modal-body__password modal-body__input" placeholder="Пароль" type="password"
+              required>
+            <label class="modal-body__policy modal-body__label">
+              <div class="modal-body__label-text">Даю согласие на
+                обработку
+                данных в соответствии с <a class="modal-body__link" href="https://zemedia.ru/confidential_policy.pdf"
+                  target="_blank">политикой
+                  конфиденциальности</a></div>
+              <input class="modal-body__checkbox modal-body__checkbox-1" type="checkbox" required>
+              <div class="modal-body__check"></div>
+            </label>
+            <label class="modal-body__contract modal-body__label">
+              <div class="modal-body__label-text">Принимаю условия
+                <a class="modal-body__link" href="https://zemedia.ru/puboferta_eresh.pdf">договора
+                  оферты</a></div>
+              <input class="modal-body__checkbox modal-body__checkbox-2" type="checkbox" required>
+              <div class="modal-body__check"></div>
+            </label>
+
+            <span class="text-error emial-error">Такой e-mail уже
+              существует в системе</span>
+            <button type="submit" class="modal-body__btn btn">Зарегистрироваться</button>
+            <a class="modal-body__link log-link reged-yet" href="#">Уже зарегистрированы?</a>
+          </form>
         </div>
         <div class="hero__message" id="type-writer-message"></div>
         <img src="img/hero/eresh.png" alt="Эриш" class="hero__robot">
@@ -192,7 +179,7 @@
     </section>
 
     <section class="vk">
-      <div class="container">
+      <div class="container pos-r">
         <div class="vk__content">
           <h2 class="vk__title">Мы есть в ВКонтакте!</h2>
           <p class="vk__text">Там мы делимся важными новостями и изменениями</p>
@@ -219,7 +206,7 @@
           <div class="bonus__text-content">
             <h2 class="bonus__title">Бонус!</h2>
             <p class="bonus__text">Зарегистрируйся сейчас и получи на счёт стартовый баланс в 500&#8381;!</p>
-            <a href="#" class="bonus__btn btn reg-link">Получить бонус</a>
+            <a href="#" class="bonus__btn btn">Получить бонус</a>
           </div>
           <img src="img/bonus/gift.png" alt="Подарок" class="bonus__img">
         </div>

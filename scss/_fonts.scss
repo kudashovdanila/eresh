@@ -21,16 +21,17 @@
 }
 
 @font-face {
-  font-family: 'ReSquare-Bold';
-  src: url('../fonts/ReSquare-Bold.eot');
-  src: url('../fonts/ReSquare-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/ReSquare-Bold.ttf') format('truetype'),
-    url('../fonts/ReSquare-Bold.woff') format('woff'),
-    url('../fonts/ReSquare-Bold.woff2') format('woff2');
+  font-family: 'TTOctosquares-Bold';
+  src: url('../fonts/TTOctosquares-Bold.eot');
+  src: url('../fonts/TTOctosquares-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTOctosquares-Bold.ttf') format('truetype'),
+    url('../fonts/TTOctosquares-Bold.woff') format('woff'),
+    url('../fonts/TTOctosquares-Bold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 
 
 @mixin reg {
@@ -42,5 +43,5 @@
 }
 
 @mixin heading {
-  font-family: 'ReSquare-Bold', sans-serif;
+  font-family: 'TTOctosquares-Bold', sans-serif;
 }

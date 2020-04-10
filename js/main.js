@@ -7,29 +7,14 @@ $(document).ready(function () {
     }
   });
 
-  $(".reg-link").click(function (e) {
-    e.preventDefault();
-    $(".reg-modal").fadeIn();
-  });
-
   $(".log-link").click(function (e) {
     e.preventDefault();
     $(".log-modal").fadeIn();
   });
 
-  $(".reg-close").click(function (e) {
-    e.preventDefault();
-    $(".reg-modal").fadeOut();
-  });
-
   $(".log-close").click(function (e) {
     e.preventDefault();
     $(".log-modal").fadeOut();
-  });
-
-  $(".reged-yet").click(function (e) {
-    e.preventDefault();
-    $(".reg-modal").fadeOut();
   });
 
   $(".recovery-link").click(function (e) {
@@ -43,6 +28,15 @@ $(document).ready(function () {
     $(".recovery-modal").fadeOut();
   });
 
+  $(".bonus__btn").click(function (e) {
+    e.preventDefault();
+    var offset = 0;
+    $('html, body').animate({
+      scrollTop: $(".header").offset().top - offset
+    }, 1000);
+    return false;
+  });
+
 
   var app = document.getElementById('type-writer-message');
 
@@ -50,10 +44,10 @@ $(document).ready(function () {
     loop: false
   });
 
-  typewriter.typeString('Привет, меня зовут Эриш!')
+  typewriter.typeString('Надоело?')
     .pauseFor(1000)
     .deleteAll()
-    .typeString('Я цифровой ассистент таргетолога!')
+    .typeString('Я помогу тебе!')
     .start();
 
   $('.features-slider').slick({
@@ -62,7 +56,7 @@ $(document).ready(function () {
     dots: true,
     slidesToScroll: 3,
     responsive: [{
-        breakpoint: 993,
+        breakpoint: 994,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,

@@ -14,12 +14,16 @@
 
   &__title {
     @include heading;
-    font-size: 60px;
+    font-size: 50px;
     margin: 0;
-    line-height: 0.9;
+    line-height: 1;
 
     @media (max-width: 993px) {
       font-size: 50px;
+    }
+
+    @media (max-width: 410px) {
+      font-size: 40px;
     }
   }
 

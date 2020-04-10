@@ -2,39 +2,51 @@
 
   &__content {
     max-width: 700px;
-  }
-
-  &__title {
-    @include heading;
-    font-size: 55px;
-    margin: 0;
-    line-height: 1;
 
     @media (max-width: 993px) {
-      font-size: 45px;
-      max-width: 450px;
+      max-width: 375px;
     }
 
-    @media (max-width: 438px) {
-      font-size: 50px;
+    @media (max-width: 729px) {
+      text-align: center;
+      max-width: 600px;
     }
   }
 
-  &__text {
-    font-size: 20px;
-    max-width: 450px;
-    margin: 30px 0 0;
-    line-height: 1.4;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 729px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__form {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 30px;
+    margin-right: 8%;
+    box-shadow: 0px 0px 41px -1px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 1182px) {
+      margin-right: 0;
+    }
 
     @media (max-width: 993px) {
-      font-size: 18px;
+      max-width: 300px;
     }
-  }
 
-  &__btn {
-    margin: 40px 0 0;
-    padding: 20px 40px;
-    font-size: 20px;
+    @media (max-width: 729px) {
+      margin-top: 50px;
+      max-width: 500px;
+    }
+
+    input {
+      margin-bottom: 10px;
+    }
   }
 
   &__message {
@@ -46,16 +58,16 @@
     width: 100%;
     z-index: 9;
     font-size: 15px;
-    max-width: 310px;
+    max-width: 170px;
     padding-left: 30px;
     background-color: #fff;
     position: absolute;
-    right: 240px;
-    top: 10px;
+    left: 150px;
+    top: 250px;
     border-radius: 50px;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
 
-    @media (max-width: 1182px) {
+    @media (max-width: 729px) {
       display: none;
     }
 
@@ -63,33 +75,54 @@
       content: '';
       display: block;
       position: absolute;
-      bottom: 0;
-      right: 0;
-      height: 30px;
-      width: 30px;
+      bottom: 20px;
+      left: -10px;
+      height: 20px;
+      width: 20px;
       background-color: #fff;
-      border-radius: 0 0 0 100%;
-      transform: rotate(-30deg);
+      border-radius: 100% 0 0 0;
     }
   }
 
   &__robot {
     position: absolute;
-    height: 525px;
-    right: 0;
-    bottom: -150px;
+    height: 250px;
+    left: 0;
+    bottom: -90px;
 
     @media (max-width: 993px) {
-      height: 350px;
+      height: 200px;
       bottom: -40px;
     }
 
-    @media (max-width: 698px) {
-      height: 300px;
+    @media (max-width: 729px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    @include heading;
+    font-size: 55px;
+    margin: 0;
+    line-height: 1;
+
+    @media (max-width: 993px) {
+      font-size: 35px;
     }
 
-    @media (max-width: 648px) {
-      display: none;
+    @media (max-width: 729px) {
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    max-width: 450px;
+    margin: 30px 0 0;
+    line-height: 1.4;
+
+    @media (max-width: 729px) {
+      margin: 30px auto 0;
     }
   }
 }

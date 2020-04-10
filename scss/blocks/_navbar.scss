@@ -17,15 +17,10 @@
   }
 
   &__btn {
-    margin-left: 20px;
 
     @media (max-width: 447px) {
       font-size: 14px;
-      padding: 5px 10px;
-
-      &:first-child {
-        margin-left: 0;
-      }
+      padding: 7px 12px;
     }
   }
 
@@ -46,20 +41,6 @@
 .logo-link {
   display: flex;
   align-items: center;
-}
-
-.vk-btn {
-  margin-top: 5px;
-
-  @media (max-width: 447px) {
-    display: none;
-  }
-
-
-  &:hover {
-    transition: margin-top .2s;
-    margin-top: 4px;
-  }
 }
 
 .sticky {
