@@ -10,7 +10,7 @@
     justify-content: space-around;
     align-items: center;
 
-    @media (max-width: 668px) {
+    @media (max-width: 819px) {
       justify-content: center;
     }
   }
@@ -18,7 +18,7 @@
   &__text-content {
     max-width: 350px;
 
-    @media (max-width: 668px) {
+    @media (max-width: 819px) {
       text-align: center;
     }
   }
@@ -46,9 +46,8 @@
   }
 
   &__img {
-    padding-top: 50px;
 
-    @media (max-width: 668px) {
+    @media (max-width: 819px) {
       display: none;
     }
 

@@ -7,7 +7,7 @@
       max-width: 375px;
     }
 
-    @media (max-width: 729px) {
+    @media (max-width: 761px) {
       text-align: center;
       max-width: 600px;
     }
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 729px) {
+    @media (max-width: 761px) {
       flex-direction: column;
       align-items: center;
     }
@@ -39,7 +39,7 @@
       max-width: 300px;
     }
 
-    @media (max-width: 729px) {
+    @media (max-width: 761px) {
       margin-top: 50px;
       max-width: 500px;
     }
@@ -50,24 +50,25 @@
   }
 
   &__message {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     @include bold;
-    height: 80px;
+    height: 100px;
     width: 100%;
     z-index: 9;
     font-size: 15px;
-    max-width: 170px;
-    padding-left: 30px;
+    max-width: 300px;
+    padding: 25px 0 0 30px;
     background-color: #fff;
     position: absolute;
-    left: 150px;
-    top: 250px;
+    left: 180px;
+    top: 170px;
     border-radius: 50px;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
 
-    @media (max-width: 729px) {
+    @media (max-width: 993px) {
+      left: 130px;
+    }
+
+    @media (max-width: 761px) {
       display: none;
     }
 
@@ -86,16 +87,16 @@
 
   &__robot {
     position: absolute;
-    height: 250px;
+    height: 350px;
     left: 0;
     bottom: -90px;
 
     @media (max-width: 993px) {
-      height: 200px;
+      height: 270px;
       bottom: -40px;
     }
 
-    @media (max-width: 729px) {
+    @media (max-width: 761px) {
       display: none;
     }
   }
@@ -110,19 +111,8 @@
       font-size: 35px;
     }
 
-    @media (max-width: 729px) {
+    @media (max-width: 761px) {
       font-size: 40px;
-    }
-  }
-
-  &__text {
-    font-size: 20px;
-    max-width: 450px;
-    margin: 30px 0 0;
-    line-height: 1.4;
-
-    @media (max-width: 729px) {
-      margin: 30px auto 0;
     }
   }
 }

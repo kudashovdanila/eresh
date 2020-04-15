@@ -44,10 +44,7 @@ $(document).ready(function () {
     loop: false
   });
 
-  typewriter.typeString('Надоело?')
-    .pauseFor(1000)
-    .deleteAll()
-    .typeString('Я помогу тебе!')
+  typewriter.typeString('Я помогу в создании, настройке и управлении рекламными кампаниями ВКонтакте!')
     .start();
 
   $('.features-slider').slick({
