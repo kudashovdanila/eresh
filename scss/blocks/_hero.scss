@@ -40,7 +40,7 @@
     }
 
     @media (max-width: 761px) {
-      margin-top: 50px;
+      margin-top: 40px;
       max-width: 500px;
     }
 
@@ -113,6 +113,16 @@
 
     @media (max-width: 761px) {
       font-size: 40px;
+    }
+  }
+
+  &__text {
+    display: none;
+
+    @media (max-width: 761px) {
+      display: block;
+      max-width: 400px;
+      margin: 40px auto 0;
     }
   }
 }
