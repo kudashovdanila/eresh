@@ -35,24 +35,6 @@
       font-size: 18px;
     }
   }
-
-  &__salute {
-    position: absolute;
-    bottom: 0;
-    left: -50px;
-
-    @media (max-width: 1186px) {
-      width: 250px;
-    }
-
-    @media (max-width: 768px) {
-      width: 200px;
-    }
-
-    @media (max-width: 571px) {
-      display: none;
-    }
-  }
 }
 
 .vk-widget {
